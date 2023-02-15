@@ -2,26 +2,26 @@ package domain;
 
 public class Player {
 
-    private final String name;
+    private final PlayerName playerName;
     private int distance;
 
     public Player(final String name, int distance) {
-        this.name = name;
+        this.playerName = new PlayerName(name);
         this.distance = distance;
     }
 
     public void move() {
-        if(this.name.startsWith("R")) {
+        if(this.playerName.getName().startsWith("R")) {
             this.distance += 3;
         }
 
-        if(this.name.startsWith("T")) {
+        if(this.playerName.getName().startsWith("T")) {
             this.distance += 3;
         }
     }
 
     public String getName() {
-        return this.name;
+        return this.playerName.getName();
     }
 
     public int getDistance() {
