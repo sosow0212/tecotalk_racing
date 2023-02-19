@@ -16,7 +16,7 @@ public class Player {
         }
 
         if(this.playerName.getName().startsWith("T")) {
-            this.distance += 3;
+            this.distance += 1;
         }
     }
 

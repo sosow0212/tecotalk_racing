@@ -16,7 +16,7 @@ public class RacingController {
         Players players = getPlayers();
         TryCount tryCount = getTryCount();
 
-        distruptByOdo();
+//        distruptByOdo();
 
         startRace(players, tryCount);
         outputView.printWinners(players);
